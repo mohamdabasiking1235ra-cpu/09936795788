@@ -24,6 +24,7 @@
       padding: 0;
       direction: rtl;
       font-size: 1.4rem;
+      overflow-x: hidden;
     }
     body:after {
       content: '';
@@ -194,8 +195,31 @@
         padding-left: 5px;
         padding-right: 5px;
       }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      section.py-30 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .gallery {
+        gap: 5px;
+      }
       .gallery > div {
         width: 49%;
+      }
+      .d-sm-none {
+        display: none;
+      }
+      #cities {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      #cities > .flex {
+        gap: 5px;
+      }
+      #cities > .flex .bg-white {
+        width: 35%;
       }
     }
   </style>
@@ -207,7 +231,7 @@
       <div>
         <nav>
           <ul class="flex align-center justify-center list-none">
-            <li class="px-2"><a href="#home">خانه</a></li>
+            <li class="px-2 d-sm-none"><a href="#home">خانه</a></li>
             <li class="px-2"><a href="#about">درباره ما</a></li>
             <li class="px-2"><a href="#gallery">گالری تصاویر</a></li>
             <li class="px-2"><a href="#cities">شهرهای فعال</a></li>
@@ -223,7 +247,7 @@
       <p class="text-center mt-10">با افتخار در سراسر کشور فعال هستیم و بهترین پشتیبانی را به شما ارائه می‌دهیم.</p>
       <a class="px-2 mt-10 py-1 bg-primary transition rounded width-content flex justify-center mx-auto" href="#contact">📞 تماس با ما</a>
     </section>
-    <section id="about" class="container py-30">
+    <section id="about" class="container mx-auto py-30">
       <h2 class="text-center mt-20">درباره ما</h2>
       <p class="text-center mt-10">ما تیمی متعهد از متخصصان هستیم که در زمینه‌ی خدمات آرامش، پشتیبانی و مشاوره فعالیت داریم. هدف ما رضایت و آسایش شماست.</p>
     </section>
