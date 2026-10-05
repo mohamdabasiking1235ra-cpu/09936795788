@@ -17,10 +17,9 @@
       text-decoration: none;
     }
     body {
-      background: url(./images/photo_2026-10-05_15-36-24.jpg) no-repeat center center fixed;
-      background-size: cover;
       scroll-behavior: smooth;
       color: white;
+      background-color: #111;
       margin: 0;
       padding: 0;
       direction: rtl;
@@ -28,9 +27,14 @@
     }
     body:after {
       content: '';
-      position: absolute;
+      position: fixed;
+      background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("./images/photo_2026-10-05_15-36-24.jpg") center / cover no-repeat;
       inset: 0;
+      height: 100vh;
+      height: 100lvh;
       background-color: rgba(0,0,0,0.7);
+      z-index: 0;
+      pointer-events: none;
     }
     header {
       background: rgba(0, 0, 0, 0.8);
